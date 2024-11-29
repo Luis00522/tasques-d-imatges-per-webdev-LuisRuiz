@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-yellow-500 text-white text-center p-5">
+      <h1 class="text-4xl">Tasques d’imatges per WebDev</h1>
+    </header>
+    <div class="flex justify-center space-x-5 mt-10 mb-10">
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="insercio_basica.html">Practica 1 i 2</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="imatges_responsives.html">Practica 3 i 4</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="galeria_lightbox.html">Practica 5</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="mapa_interactiu.html">Practica 6</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="lazy_loading.html">Practica 7</a>
+      </button>
+    </div>
+    <img
+      src="./images/Map_of_USA_NY.svg.png"
+      alt="Map of New York"
+      usemap="#mapa"
+    />
+    <map name="mapa">
+      <area
+        target="_blank"
+        rel="noopener"
+        alt="Albany"
+        title="Albany"
+        href="https://maps.app.goo.gl/xqKxZYT6ghkx9S3M7"
+        coords="34,44,270,350"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        rel="noopener"
+        alt="Binghamton"
+        title="Binghamton"
+        href="https://maps.app.goo.gl/gxzt3HWEp6XhohME6"
+        coords="377,300,75"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        rel="noopener"
+        alt="Buffalo"
+        title="Buffalo"
+        href="https://maps.app.goo.gl/W1e47SErhA9trKEt8"
+        coords="120,140,200,180,160,240"
+        shape="poly"
+      />
+    </map>
+    <!-- <script>
+      const imagen = document.getElementById("miImagen");
+      imagen.addEventListener("click", function (evento) {
+        const x = evento.offsetX;
+        const y = evento.offsetY;
+        console.log(`Coordenadas: ${x}, ${y}`);
+      });
+    </script> -->
+  </body>
+</html>

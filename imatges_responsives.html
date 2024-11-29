@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="bg-yellow-500 text-white text-center p-5">
+      <h1 class="text-4xl">Tasques d’imatges per WebDev</h1>
+    </header>
+    <div class="flex justify-center space-x-5 mt-10">
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="insercio_basica.html">Practica 1 i 2</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="imatges_responsives.html">Practica 3 i 4</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="galeria_lightbox.html">Practica 5</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="mapa_interactiu.html">Practica 6</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="lazy_loading.html">Practica 7</a>
+      </button>
+    </div>
+
+    <p class="text-6xl font-bold text-center m-10">Pràctica 3</p>
+
+    <div class="flex flex-column justify-center">
+      <img
+        src="https://picsum.photos/1200"
+        srcset="
+          https://picsum.photos/480   480w,
+          https://picsum.photos/800   800w,
+          https://picsum.photos/1200 1200w
+        "
+        sizes="
+        (max-width: 600px) 100vw, 
+        (max-width: 1200px) 50vw, 
+        33vw
+    "
+        alt="Exemple d'una imatge responsive amb diverses resolucions"
+      />
+    </div>
+
+    <div class="flex justify-center mt-5">
+      <img
+        src="images/codi_imatges_responsive.PNG"
+        alt="Codi de la lògica del srcset"
+        class="max-w-full h-auto"
+      />
+    </div>
+
+    <p class="text-6xl font-bold text-center m-10">Pràctica 4</p>
+
+    <picture>
+      <source media="(max-width: 600px)" srcset="./images/imagen1.webp" />
+      <source media="(max-width: 800px)" srcset="./images/imagen2.webp" />
+      <img src="./images/imatgedefault.webp" alt="Imatge de reserva" />
+    </picture>
+
+    <section class="text-start m-10">
+      <p class="font-bold text-2xl">
+        Quin avantatge té utilitzar <code>&lt;picture&gt;</code> per a direcció
+        d'art en comparació amb <code>srcset</code>?
+      </p>
+      <p class="text-1xl">
+        L'ús de <code>&lt;picture&gt;</code> permet seleccionar imatges
+        específiques segons les condicions del dispositiu, oferint un major
+        control sobre la direcció d'art. Això és preferible a
+        <code>srcset</code>, que només gestiona les resolucions sense
+        possibilitats d'adaptar les imatges al context.
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria amb Lightbox</title>
+    <link rel="stylesheet" href="./node_modules/lightbox2/dist/css/lightbox.min.css">
+
+  </head>
+  <body>
+    <header class="bg-yellow-500 text-white text-center p-5">
+      <h1 class="text-4xl">Tasques d’imatges per WebDev</h1>
+    </header>
+    <div class="flex justify-center space-x-5 mt-10">
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="insercio_basica.html">Practica 1 i 2</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="imatges_responsives.html">Practica 3 i 4</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="galeria_lightbox.html">Practica 5</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="mapa_interactiu.html">Practica 6</a>
+      </button>
+      <button class="bg-yellow-500 p-6 font-bold text-white">
+        <a href="lazy_loading.html">Practica 7</a>
+      </button>
+    </div>
+    <h1>Galeria d’Imatges</h1>
+    <div class="galeria">
+      <a
+        href="https://picsum.photos/800/600?random=1"
+        data-lightbox="galeria"
+        data-title="Imatge 1"
+      >
+        <img src="https://picsum.photos/200/150?random=1" alt="Imatge 1" />
+      </a>
+      <a
+        href="https://picsum.photos/800/600?random=2"
+        data-lightbox="galeria"
+        data-title="Imatge 2"
+      >
+        <img src="https://picsum.photos/200/150?random=2" alt="Imatge 2" />
+      </a>
+      <a
+        href="https://picsum.photos/800/600?random=3"
+        data-lightbox="galeria"
+        data-title="Imatge 3"
+      >
+        <img src="https://picsum.photos/200/150?random=3" alt="Imatge 3" />
+      </a>
+      <a
+        href="https://picsum.photos/800/600?random=4"
+        data-lightbox="galeria"
+        data-title="Imatge 4"
+      >
+        <img src="https://picsum.photos/200/150?random=4" alt="Imatge 4" />
+      </a>
+      <a
+        href="https://picsum.photos/800/600?random=5"
+        data-lightbox="galeria"
+        data-title="Imatge 5"
+      >
+        <img src="https://picsum.photos/200/150?random=5" alt="Imatge 5" />
+      </a>
+    </div>
+
+    <!-- Script de Lightbox2 -->
+    <script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
